@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Instagram Photo Feed</title>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container">
+  <a class="navbar-brand" href="#">
+    <img src="https://imageog.flaticon.com/icons/png/512/87/87390.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" width="60" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    Instagram
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <!-- Button trigger modal -->
+        <button type="button" class="btn btn-success custom mr-3" data-toggle="modal" data-target="#exampleModal">
+        Create a new post 
+        </button>
+ 
+        <!-- Dropdown -->
+      <div class="dropdown">
+  <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="fas fa-cog"></i>
+  </button>
+    <div class="dropdown-menu dropdown-menu-right">
+    <button class="dropdown-item " type="button">Action</button>
+    <button class="dropdown-item" type="button">Another action</button>
+    <button class="dropdown-item" type="button">Something else here</button>
+  </div>
+</div>
+    </form>
+  </div>
+  </div>
+</nav>
+
+ <!-- Modal Begin -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+              <div class="modal-body ">
+                  <textarea class="form-control" aria-label="With textarea"></textarea>
+                  <!--<input class="form-control mr-sm-2 custom-search-modal" type="search" placeholder="" aria-label="Search">-->
+                  <i class="fas fa-camera-retro p-1 border rounded mt-1" ></i>
+                  <i class="fas fa-map-marker-alt p-1 border rounded mt-1" ></i>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success btn-sm">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div> <!-- modal end -->
+
+   <!--Grid View-->
+<ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-border-all"></i></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fas fa-square"></i></a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+  <div class="container-fluid">
+  <div class="row no-gutters">
+    <div class="col-sm">
+     <img src="https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="sunset" width="100%" height="250">
+    </div>
+    <div class="col-sm">
+      <img src="https://cdn.pixabay.com/photo/2020/06/14/17/57/mountains-5298769_960_720.jpg" alt="mountans" width="100%" height="250">
+    </div>
+    <div class="col-sm">
+      <img src="https://cdn.pixabay.com/photo/2020/05/27/22/18/meadow-5229169_960_720.jpg" alt="flowers" width="100%" height="250">
+    </div>
+  </div>
+  <div class="row my-1 no-gutters">
+    <div class="col-sm">
+     <img src="https://cdn.pixabay.com/photo/2020/06/23/07/22/butterfly-5331647_960_720.jpg" alt="butterfly" width="100%" height="250">
+    </div>
+    <div class="col-sm">
+      <img src="https://cdn.pixabay.com/photo/2020/06/21/12/37/deer-5324645_960_720.jpg" alt="deers" width="100%" height="250">
+    </div>
+    <div class="col-sm">
+      <img src="https://cdn.pixabay.com/photo/2020/06/07/13/37/poppy-5270458_960_720.jpg" alt="wild flowers" width="100%" height="250">
+    </div>
+  </div>
+  <div class="row no-gutters">
+    <div class="col-sm">
+     <img src="https://cdn.pixabay.com/photo/2020/06/14/15/42/beach-5298350_960_720.jpg" alt="beach" width="100%" height="250">
+    </div>
+    <div class="col-sm">
+      <img src="https://cdn.pixabay.com/photo/2020/06/08/19/31/jellyfish-5275858_960_720.jpg" alt="jellyfish" width="100%" height="250">
+    </div>
+    <div class="col-sm">
+      <img src="https://cdn.pixabay.com/photo/2020/06/23/08/05/conqueror-5331783_960_720.jpg" alt="dinosaur" width="100%" height="250">
+    </div>
+  </div>
+</div> 
+  <!-- Card View -->
+</div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="card mx-auto" style="width: 40rem;">
+            <div class="card-header">
+                <div class="float-left">
+                <h1>My first photo</h1>
+                </div>
+                <div class="float-right">
+                <h2 class="text-right">6/25</h2>
+                </div>
+            </div>
+        <img src="https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="sunset">
+        <div class="card-body">
+        <p class="card-text">This is my first photo of the feed. This is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+  </div>
+</div>
+        <div class="card mx-auto mt-5" style="width: 40rem;">
+            <div class="card-header">
+                <div class="float-left">
+                <h1>My 2nd photo</h1>
+                </div>
+                <div class="float-right">
+                <h2 class="text-right">6/26</h2>
+                </div>
+            </div>
+        <img src="https://cdn.pixabay.com/photo/2020/06/14/17/57/mountains-5298769_960_720.jpg" class="card-img-top" alt="mountains">
+        <div class="card-body">
+        <p class="card-text">This is my 2nd photo of the feed. This is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+        </div>
+        </div>
+    
+        <div class="card mx-auto mt-5" style="width: 40rem;">
+            <div class="card-header">
+                <div class="float-left">
+                <h1>My 3rd photo</h1>
+                </div>
+                <div class="float-right">
+                <h2 class="text-right">6/26</h2>
+                </div>
+            </div>
+        <img src="https://cdn.pixabay.com/photo/2020/05/27/22/18/meadow-5229169_960_720.jpg" class="card-img-top" alt="flowers">
+        <div class="card-body">
+        <p class="card-text">This is my 3rd photo of the feed. This is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+        </div>
+        </div>
+
+</body>
+</html>
